@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*
+id em css #
+class em css .
+*/
+body {
+    background-color: #afeffa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: #2e575e;
+}
+h1#pricipal{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(45deg,  #61b8c7 , #376870 );
+    margin: auto;
+}  
+h2.basico {
+    color: #3aaa5cc7;
+    font-weight: 650;
+}
+h2.intermediario {
+    color: rgb(172, 172, 53);
+    font-weight: 750;
+}
+h2.avancado {
+    color: rgb(182, 69, 69);
+    font-weight: 900;
+}

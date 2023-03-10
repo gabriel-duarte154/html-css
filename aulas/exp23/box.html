@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            
+        }
+        nav {
+            background-color: salmon;
+            padding: 2px;
+            margin: 2px;
+            border-radius: 5px;
+            box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.342);
+            
+
+        }
+        nav > a{
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+            margin-left: 95px;
+            
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        Main {
+            background-color: white;
+            padding: 2px;
+            margin: 10px;
+            border-radius: 50px 5px;
+            box-shadow: 10px 2px 7px 1px rgba(0, 0, 0, 0.315);
+        }
+        section {
+            margin: 10px;
+            padding: 5px;
+        }
+        footer {
+            background-color: salmon;
+            color: white;
+            text-align: center;
+            padding: 4px;
+
+        }
+        footer > p {
+            margin: 0px;
+
+        }
+        .especial {
+            background-color: rgb(252, 157, 147);
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow:  inset 2px 2px 5px 3px rgba(0, 0, 0, 0.336);
+        }
+        div#bola {
+             height: 500px;
+             width:500px;
+             background-color: aliceblue;
+             margin:  10px auto;
+             border-radius: 50%;
+             box-shadow: 1px 1px 1px 1px black;
+             text-align: center;
+             
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">nav</a>
+            <a href="#">nav</a>
+            <a href="#">nav</a>
+            <a href="#">nav</a>
+            <a href="#">nav</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Principal</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iure qui earum beatae officia minus. Labore maxime minima adipisci expedita aut cupiditate quam laborum quisquam assumenda esse sed, asperiores perferendis.</p>
+        </section>
+        <section>
+            <h2>Assuntos</h2>
+            <article>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reprehenderit sequi, quaerat blanditiis minima fugit eligendi voluptate id nostrum atque repudiandae, ipsam et accusamus quos cupiditate at repellat nam ea?</p>
+            </article>
+            <article class="especial">
+                <h2>Notícias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae placeat accusantium possimus temporibus nostrum facere, deleniti perferendis provident, neque ipsam recusandae necessitatibus. Id porro dolor, atque placeat quia reprehenderit fuga!</p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Shadow</p>
+    </footer>
+</body>
+</html>

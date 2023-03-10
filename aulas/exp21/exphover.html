@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div{
+             background-color: #817f7f;
+             width: 175px ;
+             display: block;
+    
+        }
+        div:hover{
+            color: white;
+            
+        }
+        div > a{
+            display: none;
+            
+        }
+        div:hover > a{
+         display: block;
+         background-color: #cecbcb;
+         color: black;
+         
+         
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover</h1>
+    <p>Pequeno menu de teste</p>
+    <div>
+        Passe o mouse aqui
+        <a href="https://www.twitch.tv" target="_blank">
+            <p>Texto escondido</p>
+        </a>
+        <a href="index.html">Voltar</a>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

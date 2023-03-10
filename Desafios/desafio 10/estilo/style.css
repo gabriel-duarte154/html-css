@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+
+@font-face {
+
+    font-family: "Android";
+    src: url("../fonts/Android.ttf") format("truetype");
+}
+
+
+:root {
+
+    --cor0: #fff0c7c4;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-especial: "Android", sans-serif;
+}
+
+
+* {
+
+    margin: 0px;
+}
+
+
+body {
+
+    background-color: var(--cor0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+header {
+
+    background-image: linear-gradient(180deg, var(--cor2), var(--cor5));
+    padding: 20px;
+    min-width: 262px;
+}
+
+#pricipal{
+
+    text-align: center;
+    color: #fff;
+    margin: 2%;
+    text-shadow: 1px 1px 5px black;
+    font-size: 2em;
+}
+
+a.nav {
+
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    padding: 0.5%;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    transition-duration: 500ms; 
+}
+
+a.nav:hover {
+
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 5px;
+}
+
+main{
+
+    background-color: #fff;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+h1.titulo{
+
+    font-family: var(--font-especial);
+    color: var(--cor4);
+    padding: 3%;
+    font-size: 2em;
+}
+
+p#slogn{
+
+    margin-top: 20px;
+    color: #fff;
+    font-size: medium;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    max-width: 600px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+h2.subtitulo {
+
+    font-family: var(--font-especial);
+    margin: 2%;
+    background-image: linear-gradient(90deg, var(--cor1), #fff );
+    padding: 1px 10px ;
+    color: var(--cor4);
+}
+
+p.paragrafo{
+
+   text-align: justify;
+   margin: 1% 1.5%;
+   padding: 3%;
+   text-indent: 30px;
+   line-height: 2em;
+   font-size: 1.3em;
+    
+}
+aside {
+
+    background-color: var(--cor1);
+    border-radius: 5px 20px;
+    margin: 2%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+}
+
+h3 {
+
+    background-color: var(--cor3);
+    color: #fff;
+    border-radius:5px 20px 0px 0px;
+    padding: 1%;
+}
+
+a.link:hover {
+
+    text-decoration: underline;
+}
+
+a.link::after {
+
+    content: "🔗";
+}
+
+a {
+
+    text-decoration: none;
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+ul {
+    margin-top: 10px;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+iframe {
+    max-width: 1000px;
+    margin: auto;
+}
+
+strong {
+    color: var(--cor3);
+}
+
+/* Como fazer um video responsivo*/
+div {
+
+    background-color: var(--cor4);
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div > iframe {
+
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+}
+/* fim */
+
+/* imagem reponsiva */
+main img {
+
+    width: 99%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main img.pq {
+    
+    max-width: 300px;
+}
+
+footer {
+
+    text-align: center;
+    background-color: var(--cor5);
+    padding: 2px;
+    color: #fff;
+    font-style: italic;
+    margin-top: 20px;
+    min-width: 298px;
+    
+}

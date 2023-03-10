@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(3, 179, 3);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: darkblue;
+        }
+        li::after{
+            text-decoration: none;
+            content: " 🔗";
+        }
+        .especial:hover{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Links personalizados</h1>
+    <ul>
+        <li> Link <a href="http://youtube.com" target="_blank">Youtube</a> </li>
+        <li> Link <a class="especial" href="http://twitch.tv" target="_blank">Twitch</a> </li>
+        <li> Link <a href="http://mozilla.org" target="_blank">Mozilla</a> </li>
+    </ul>
+</body>
