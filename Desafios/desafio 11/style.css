@@ -55,12 +55,12 @@ a:hover {
     text-decoration: underline;
 }
 
-p#cabecalho {
+p#header {
     
     padding-bottom: 50px;
 }
 
-p.corpo {
+p.main {
 
     font-family: var(---font3);
     font-size: 3.5vw;
@@ -69,7 +69,7 @@ p.corpo {
     margin-bottom: 5%;
 }
 
-div.mirror {
+div.back {
 
     padding: 2% 0px;
     position: relative;
@@ -88,13 +88,13 @@ div > p {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377); 
 }
 
-div#imagem1 {
+div#image1 {
 
     background: black url("imagens/background001.jpg") right fixed;
     background-size: cover;
 }
 
-div#imagem2 {
+div#image2 {
 
     background: black url("imagens/background002.jpg") center fixed;
     background-size: cover;
