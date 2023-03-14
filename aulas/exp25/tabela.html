@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+        
+            border-collapse: collapse;
+            width: 400px;
+        
+        }
+        tr.linha {
+
+            background-color: lightgray;
+
+        }
+        td.center {
+
+            text-align: center;
+        }
+
+        th {
+
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+
+        td {
+
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+
+        <tr> <!-- Primeira linha -->
+
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+
+        </tr>
+        <tr>
+
+            <td>Carlos</td>
+            <td class="center">25</td>
+            <td class="center">M</td>
+
+
+        </tr>
+        <tr class="linha">
+            <td>Maria</td>
+            <td class="center">28</td>
+            <td class="center">F</td>
+
+        </tr>
+        <tr>
+
+            <td>José</td>
+            <td class="center">65</td>
+            <td class="center">M</td>
+
+        </tr>
+    
+    </table>
+</body>
+</html>
