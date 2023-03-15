@@ -16,9 +16,15 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption {
+            font-size: 1.5em;
+            background-color: lightgrey;
+        }
         td,th {
 
             border: 1px solid black;
+            height: 30px;
+
         }
         th,tfoot {
 
@@ -35,10 +41,11 @@
 <body>
     <h1>Tabelas Complexas</h1>
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -153,7 +160,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total da População</th>
+                <th scope="row">Total da População</th>
                 <td class="number">191 109 341</td>
             </tr>
         </tfoot>
