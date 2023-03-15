@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+
+            font-size: 3em;
+            text-align: center;
+            font-variant: small-caps;
+        }
+        table {
+
+            border-collapse: collapse;
+            width: 500px;
+            height: 300px;
+            margin: 30px auto;
+        }
+        caption {
+
+            font-size: 1.5em;
+            background-image: linear-gradient(90deg, #6b9af2a4, #78e6d96b, #72f27b81);
+            border: 2px solid black;
+            font-weight: bold;
+        }
+        td, th{
+
+            border: 2px solid black;
+        }
+        .c-nome {
+
+            background-color: #6b9af2ad;
+        }
+        .c-grupo {
+
+            background-color: #78e6d9a8;
+        }
+        .c-prof {
+
+            background-color: #72f27b8f;
+        }
+    </style>
+</head>
+<body>
+    <h1>ColGrup</h1>
+
+    <table>
+        <colgroup>
+            <col class="c-nome">
+            <col class="c-grupo" span="2">
+            <col class="c-prof"> 
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissâo</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Padeiro</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>17</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Ívina</td>
+            <td>F</td>
+            <td>48</td>
+            <td>Advogada</td>
+        </tr>
+    </table>
+</body>
+</html>
