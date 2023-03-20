@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamneto</title>
+    <style>
+        * {
+
+          margin: 0;
+          padding: 0;  
+        }
+
+        body {
+
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-color: black;
+            
+        }
+
+        div#principal {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: rgba(0, 0, 255, 0.747);
+            width: 50vw;
+            height: 50vh;
+            transform: translate(-50%, -50%);
+        }
+        div#secundaria {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 166, 0, 0.801);
+            width: 25vw;
+            height: 25vh;
+        }
+        nav {
+
+            transform: translate(-100%, 0);
+            position: absolute;
+            left: 100vw;
+            background-color: aliceblue;
+            width: 60px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div id="secundaria"> 
+
+        </div>
+    </div>
+    <nav></nav>
+</body>
+</html>
