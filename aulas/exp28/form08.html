@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="post" method="post">
+        <p>
+            <label for="GET-estado">Estado:</label>
+            <select name="estado" id="GET-estado">
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected>São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="GET-prof">Profissão:</label>
+            <input type="text" name="prof" id="GET-prof" list="lprof">
+            <datalist id="lprof">
+                <option>Administração</option>
+                <option>Desenvolvedor</option>
+                <option>Cozinheiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="GET-msg">Mensagem:</label>
+            <textarea name="msg" id="GET-msg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
