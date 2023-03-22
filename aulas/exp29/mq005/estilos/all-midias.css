@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*telas grandes*/
+
+@media screen and (min-width: 768px)  {
+
+    header > h1 {
+
+        padding-bottom: 70px;
+
+    }
+
+    i#menu {
+
+        display: none;
+      
+    }
+    menu {
+
+        display: block;
+        background-color: var(--cor2);
+
+    }
+    menu > ul li {
+
+        display: inline-block;
+       
+        
+    }
+    menu > ul a {
+
+        border-top: none;
+        padding-left: 15px;
+        background-color: var(--cor2);
+        transition: 200ms;
+        border-radius: 5px;
+    }
+    menu > ul a:hover {
+
+        background-color: var(--cor3);
+    }
+    main {
+
+        max-width: 1000px;
+        height: 100vh;
+        font-size: 1.1em;
+
+    }
+
+}

@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+:root {
+
+    --cor1: #A0B5F2 ;
+    --cor2: #8899ca;
+    --cor3: #beccf8 ;
+    --cor4: #A7FCF8 ;
+    --cor5: #A0F2D7 ;
+}
+
 * {
 
     padding: 0;
@@ -11,12 +20,12 @@ html, body {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: lightgray;
+    background-color: rgba(228, 226, 226, 0.685);
 }
 
 header {
 
-    background-color: rgb(148, 148, 148);
+    background-image: linear-gradient(180deg, #beccf8, #A0B5F2, #8899ca );
     text-align: center;
 }
 
@@ -26,58 +35,66 @@ header > h1 {
     padding-bottom: 50px;
 }
 
-nav {
+menu {
+
+    display: none;
     background-color: white;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.247);
     
 }
+
 i#menu {
 
     display: block;
-    background: grey;
+    background: var(--cor2);
     text-align: center;
     padding: 10px;
     cursor: pointer;
 }
+
 #menu:hover {
 
-    background-color: white;
+    background-color: var(--cor3);
 }
 
-nav > ul {
+menu > ul {
 
-    display: none;
     list-style-type: none;
     
 }
-nav > ul a {
+
+menu > ul a {
 
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(100, 100, 100);
-    color: white;
+    background-color: var(--cor3);
+    color: black;
     text-align: center;
     border-top: 2px solid grey ;
 
 }
-nav a:hover {
 
-    background-color: rgb(204, 203, 203);
+menu a:hover {
+
+    background-color: var(--cor2);
 }
 
 main {
 
-    background-color: white;
+    background-color: #fff;
     width: 90vw;
     margin: 10px auto;
-    
     padding: 5px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.432);
 }
+
 main h2 {
 
     padding: 10px;
 }
+
 main p {
 
     margin-bottom: 15px;
@@ -85,10 +102,11 @@ main p {
     text-align: justify;
     line-height: 1.5em;
 }
+
 footer {
 
     
-    background-color: black;
+    background-color: #59627c;
     color: white;
     text-align: center;
     font-style: italic;
