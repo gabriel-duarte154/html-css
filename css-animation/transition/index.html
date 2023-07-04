@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css transition</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="trigger">
+      <span>hi</span>
+      <div class="box"></div>
+    </div>
+
+    <script>
+      const trigger = document.querySelector('.trigger');
+      trigger.addEventListener('click', move);
+      function move() {
+        document.querySelector('.box').classList.toggle('animation');
+      }
+    </script>
+  </body>
+</html>

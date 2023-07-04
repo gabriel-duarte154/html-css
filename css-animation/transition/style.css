@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1rem solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  border-radius: .5rem;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(rgb(127, 127, 238), rgb(49, 49, 243));
+  transition: transform .7s ease-in-out;
+  pointer-events: none;
+}
+
+.animation {
+  transform: translate(calc(100px + 1rem));
+}
